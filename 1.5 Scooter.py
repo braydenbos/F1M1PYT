@@ -1,5 +1,10 @@
 import time
 
+def berekenmaandkosten(km_per_maand):
+    prijs=l * lpkm * km + verzekering
+    str(prijs)=prijs
+    print("Je hebt deze maand " +prijs+ "€ aan scooters kosten bataald")
+
 verzekering = "";
 
 while not isinstance(verzekering, float):
@@ -60,8 +65,5 @@ while not isinstance(km, float):
 
     except ValueError:
         print(km + " is geen geldig getal!")
-
-prijs = l * lpkm * km + verzekering
-prijs = float(prijs)
+berekenmaandkosten(km_per_maand=l * lpkm * km + verzekering)
 time.sleep(1.0)
-print("Je hebt deze maand " + str(prijs) + "€ aan scooters kosten bataald")
